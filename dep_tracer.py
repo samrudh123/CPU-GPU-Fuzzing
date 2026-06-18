@@ -561,10 +561,9 @@ def main():
 
     # ── Output ────────────────────────────────────────────────────────────────
     if args.json:
-        print(json.dumps(
-            build_json(classified, shared_libs, syscall_counts, subsystems, kernel_modules, kernel_modules_note),
-            indent=2,
-        ))
+        json_data = build_json(classified, shared_libs, syscall_counts, subsystems, kernel_modules, kernel_modules_note)
+        with open(script_path.with_suffix(".deps.json"), "w", encoding="utf-8") as f:
+            json.dump(json_data, f, indent=4)
     else:
         print_results(
             source_file    = str(script_path),
