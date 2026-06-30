@@ -1,0 +1,206 @@
+{
+    "layer1_imports": [
+        {
+            "name": "matplotlib",
+            "kind": "not-found",
+            "location": null,
+            "version": null
+        },
+        {
+            "name": "torch",
+            "kind": "not-found",
+            "location": null,
+            "version": null
+        },
+        {
+            "name": "torchvision",
+            "kind": "not-found",
+            "location": null,
+            "version": null
+        },
+        {
+            "name": "tqdm",
+            "kind": "not-found",
+            "location": null,
+            "version": null
+        }
+    ],
+    "layer2_shared_libs": {},
+    "layer3_syscalls": [
+        {
+            "name": "openat",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "read",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "write",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "close",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "mmap",
+            "count": 1,
+            "kernel_subsystem": "mm"
+        },
+        {
+            "name": "munmap",
+            "count": 1,
+            "kernel_subsystem": "mm"
+        },
+        {
+            "name": "mprotect",
+            "count": 1,
+            "kernel_subsystem": "mm"
+        },
+        {
+            "name": "brk",
+            "count": 1,
+            "kernel_subsystem": "mm"
+        },
+        {
+            "name": "fstat",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "lseek",
+            "count": 1,
+            "kernel_subsystem": "VFS"
+        },
+        {
+            "name": "exit_group",
+            "count": 1,
+            "kernel_subsystem": "sched"
+        },
+        {
+            "name": "rt_sigaction",
+            "count": 1,
+            "kernel_subsystem": "signals"
+        },
+        {
+            "name": "rt_sigprocmask",
+            "count": 1,
+            "kernel_subsystem": "signals"
+        },
+        {
+            "name": "futex",
+            "count": 1,
+            "kernel_subsystem": "sync"
+        },
+        {
+            "name": "set_tid_address",
+            "count": 1,
+            "kernel_subsystem": "sync"
+        }
+    ],
+    "layer4_kernel_subsystems": [
+        {
+            "name": "VFS",
+            "description": "Virtual File System \u2014 unified interface for all file operations",
+            "syscalls": [
+                "openat (\u00d71)",
+                "read (\u00d71)",
+                "write (\u00d71)",
+                "close (\u00d71)",
+                "fstat (\u00d71)",
+                "lseek (\u00d71)"
+            ]
+        },
+        {
+            "name": "mm",
+            "description": "Memory Manager \u2014 virtual memory, paging, and mmap",
+            "syscalls": [
+                "mmap (\u00d71)",
+                "munmap (\u00d71)",
+                "mprotect (\u00d71)",
+                "brk (\u00d71)"
+            ]
+        },
+        {
+            "name": "sched",
+            "description": "Scheduler \u2014 process creation, execution, and CPU scheduling",
+            "syscalls": [
+                "exit_group (\u00d71)"
+            ]
+        },
+        {
+            "name": "signals",
+            "description": "Signal subsystem \u2014 async inter-process notification",
+            "syscalls": [
+                "rt_sigaction (\u00d71)",
+                "rt_sigprocmask (\u00d71)"
+            ]
+        },
+        {
+            "name": "sync",
+            "description": "Synchronisation \u2014 futex-based mutexes and condition variables",
+            "syscalls": [
+                "futex (\u00d71)",
+                "set_tid_address (\u00d71)"
+            ]
+        }
+    ],
+    "kernel_modules_loaded": [
+        "udp_diag",
+        "ipt_REJECT",
+        "nf_reject_ipv4",
+        "xt_tcpudp",
+        "xt_comment",
+        "iptable_nat",
+        "ip_tables",
+        "cpuid",
+        "tcp_diag",
+        "inet_diag",
+        "ccm",
+        "xt_conntrack",
+        "xt_MASQUERADE",
+        "bridge",
+        "stp",
+        "llc",
+        "xfrm_user",
+        "xfrm_algo",
+        "xt_set",
+        "ip_set",
+        "nft_chain_nat",
+        "nf_nat",
+        "nf_conntrack",
+        "nf_defrag_ipv6",
+        "nf_defrag_ipv4",
+        "xt_addrtype",
+        "nft_compat",
+        "x_tables",
+        "nf_tables",
+        "vxlan",
+        "ip6_udp_tunnel",
+        "udp_tunnel",
+        "rfcomm",
+        "snd_seq_dummy",
+        "snd_hrtimer",
+        "overlay",
+        "qrtr",
+        "cmac",
+        "algif_hash",
+        "algif_skcipher",
+        "af_alg",
+        "bnep",
+        "binfmt_misc",
+        "nvidia_uvm",
+        "nls_iso8859_1",
+        "xe",
+        "snd_sof_pci_intel_mtl",
+        "snd_sof_intel_hda_generic",
+        "soundwire_intel",
+        "snd_hda_codec_intelhdmi"
+    ],
+    "kernel_modules_note": ""
+}
